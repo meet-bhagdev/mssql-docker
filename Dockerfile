@@ -1,9 +1,6 @@
 FROM microsoft/mssql-server-linux:latest
 
-# Install node/npm
-RUN apt-get -y update  && \
-        apt-get install -y curl && \
-        curl -sL https://deb.nodesource.com/setup_6.x | bash - && 
+
 
 # Create app directory
 RUN mkdir -p /usr/src/app
